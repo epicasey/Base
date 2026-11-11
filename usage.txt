@@ -1,0 +1,5 @@
+Copy the idf_component.yml and component.mk files into the main directory.
+CMakeLists.txt in main directory should containg the paths to the .h files and the .c,.cpp fileslike this:
+	# Edit following two lines to set component requirements (see docs)
+	idf_component_register( SRC_DIRS "." "../../base" 
+							INCLUDE_DIRS "." "../../base") 
